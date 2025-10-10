@@ -1028,7 +1028,81 @@ body {
 .form-field input::placeholder {
     color: #878787;
 }
+.form-field select {
+    width: 100%;
+    height: 49px;
+    border: none;
+    border-radius: 13px;
+    background-color: #FFFFFF;
+    font-family: var(--font-primary);
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #878787;
+    padding: 0 2rem;
+    padding-right: 3rem;
+    outline: none;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%239B71A3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.25rem center;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
 
+.form-field select:hover {
+    box-shadow: 0 4px 12px rgba(155, 113, 163, 0.15);
+    background-color: #FEFEFE;
+}
+
+.form-field select:focus {
+    box-shadow: 0 0 0 3px rgba(155, 113, 163, 0.25);
+    color: #1E1E1E;
+    background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23891B52' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+.form-field select option {
+    color: #1E1E1E;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: #FFFFFF;
+}
+
+.form-field select option:checked,
+.form-field select option:focus {
+    background-color: #9B71A3 !important;
+    background: #9B71A3 !important;
+    color: #FFFFFF !important;
+}
+
+.form-field select option:hover {
+    background-color: #F5EFF6 !important;
+    background: linear-gradient(135deg, #FBF2ED 0%, #F5EFF6 100%) !important;
+    color: #891B52 !important;
+}
+
+.form-field select option[value=""] {
+    color: #878787;
+}
+
+/* Selected option styling */
+.form-field select:valid {
+    color: #1E1E1E;
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+    .form-field select {
+        height: 59px;
+        border-radius: 15px;
+        font-size: 1rem;
+        padding: 0 3.25rem;
+        padding-right: 4rem;
+        background-position: right 2.25rem center;
+        background-size: 16px 9px;
+    }
+
+}
 @media (min-width: 1024px) {
     .form-field input {
         height: 59px;
