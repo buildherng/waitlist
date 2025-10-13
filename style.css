@@ -1128,7 +1128,7 @@ body {
 
 @media (min-width: 1024px) {
     .form-field--preference {
-        width: 272px;
+        width: 246px;
     }
 }
 
@@ -1138,7 +1138,7 @@ body {
 
 @media (min-width: 1024px) {
     .form-field--size {
-        width: 124px;
+        width: 150px;
     }
 }
 
